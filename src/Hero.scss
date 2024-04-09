@@ -1,0 +1,16 @@
+.hero {
+    &__title {
+        display: inline-block;
+        margin-bottom: 1cqi;
+        font-size: 28px;
+        color: #333;
+        font-weight: bold;
+        letter-spacing: .03em;
+    }
+    &__text {
+        max-width: 500px;
+        margin-bottom: 36px;
+        color: #333;
+        font-size: 12px;
+    }
+}

@@ -10,8 +10,18 @@ import Footer from './Footer';
 function App() {
   return (
     <div>
-      <AppAppBar />
+      <div id="top" className='main'>
+        <AppAppBar />
+        <p className='title'>Night's Guardians!</p>
+      </div>
       <Hero />
+      <div className='wrap'>
+        <button className="btn-31">
+          <span className="text-container">
+            <span className="text">contact</span>
+          </span>
+        </button>
+      </div>
       <Testimonials />
       <FAQ />
       <Footer />

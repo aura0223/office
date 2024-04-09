@@ -11,6 +11,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import Logo from './img/logo.png'
+
 const logoStyle = {
   width: '140px',
   height: 'auto',
@@ -58,10 +60,7 @@ function AppAppBar() {
               justifyContent: 'space-between',
               flexShrink: 0,
               borderRadius: '999px',
-              bgcolor:
-                theme.palette.mode === 'light'
-                  ? 'rgba(255, 255, 255, 0.4)'
-                  : 'rgba(0, 0, 0, 0.4)',
+              bgcolor: '#fff',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               border: '1px solid',
@@ -78,23 +77,21 @@ function AppAppBar() {
                 display: 'flex',
                 alignItems: 'center',
                 ml: '-18px',
-                px: 0,
+                px: 2,
               }}
             >
               <img
-                src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
-                }
+                src={Logo}
                 style={logoStyle}
                 alt="logo of sitemark"
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => scrollToSection('top')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Features
+                    Top
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -139,24 +136,13 @@ function AppAppBar() {
               }}
             >
               <Button
-                color="primary"
-                variant="text"
-                size="small"
-                component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
-                target="_blank"
-              >
-                Sign in
-              </Button>
-              <Button
-                color="primary"
+                color="error"
                 variant="contained"
-                size="small"
+                size="medium"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
+                href="##"
               >
-                Sign up
+                contact us
               </Button>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
@@ -187,8 +173,8 @@ function AppAppBar() {
                     }}
                   >
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
+                  <MenuItem onClick={() => scrollToSection('top')}>
+                    Top
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('testimonials')}>
                     Testimonials
@@ -203,26 +189,13 @@ function AppAppBar() {
                   <Divider />
                   <MenuItem>
                     <Button
-                      color="primary"
+                      color="error"
                       variant="contained"
                       component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
+                      href="##"
                       sx={{ width: '100%' }}
                     >
-                      Sign up
-                    </Button>
-                  </MenuItem>
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="outlined"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign in
+                      contact us
                     </Button>
                   </MenuItem>
                 </Box>

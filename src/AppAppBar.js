@@ -5,7 +5,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
@@ -95,27 +94,11 @@ function AppAppBar() {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
+                  onClick={() => scrollToSection('Example')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Testimonials
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Highlights
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('pricing')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Pricing
+                    Example
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -127,23 +110,6 @@ function AppAppBar() {
                   </Typography>
                 </MenuItem>
               </Box>
-            </Box>
-            <Box
-              sx={{
-                display: { xs: 'none', md: 'flex' },
-                gap: 0.5,
-                alignItems: 'center',
-              }}
-            >
-              <Button
-                color="error"
-                variant="contained"
-                size="medium"
-                component="a"
-                href="##"
-              >
-                contact us
-              </Button>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
@@ -176,28 +142,10 @@ function AppAppBar() {
                   <MenuItem onClick={() => scrollToSection('top')}>
                     Top
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
+                  <MenuItem onClick={() => scrollToSection('Example')}>
+                    Example
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                  <Divider />
-                  <MenuItem>
-                    <Button
-                      color="error"
-                      variant="contained"
-                      component="a"
-                      href="##"
-                      sx={{ width: '100%' }}
-                    >
-                      contact us
-                    </Button>
-                  </MenuItem>
                 </Box>
               </Drawer>
             </Box>

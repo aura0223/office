@@ -1,0 +1,33 @@
+.title {
+    &__title {
+        display: inline-block;
+        margin-bottom: 18px;
+        font-size: 28px;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: .03em;
+    }
+    &__text {
+        max-width: 500px;
+        margin-bottom: 36px;
+        color: #fff;
+        font-size: 12px;
+    }
+    &__wrap {
+        display: flex;
+        padding: 50px 50px 20px;
+    }
+    &__box {
+        padding-left: 50px;
+        @media screen and (max-width: 767px) {
+            padding-left: 30px;
+        }
+    }
+    &__img {
+        width: auto;
+        height: 140px;
+        @media screen and (max-width: 767px) {
+            height: 80px;
+        }
+    }
+}

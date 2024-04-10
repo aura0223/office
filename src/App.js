@@ -1,9 +1,9 @@
 import './App.scss';
 
 import AppAppBar from './AppAppBar';
-import Hero from './Hero';
+import Title from './Title';
 import FAQ from './FAQ';
-import Testimonials from './Testimonials';
+import Example from './Example';
 import Footer from './Footer';
 
 
@@ -14,17 +14,15 @@ function App() {
         <AppAppBar />
         <p className='title'>Night's Guardians!</p>
       </div>
-      <Hero />
-      <div className='wrap'>
-        <button className="btn-31">
-          <span className="text-container">
-            <span className="text">contact</span>
-          </span>
-        </button>
+      <div className='main__example'>
+      <Title />
       </div>
-      <Testimonials />
+      <Example />
       <FAQ />
       <Footer />
+      <div className='main__button'>
+        <button className='button-85'>お問い合わせ</button>
+      </div>
     </div>
   );
 }

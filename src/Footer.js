@@ -1,13 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import FacebookIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/X';
 
 export default function Footer() {
   return (
@@ -38,32 +33,6 @@ export default function Footer() {
             {new Date().getFullYear()}
           </Typography>
         </div>
-        <Stack
-          direction="row"
-          justifyContent="left"
-          spacing={1}
-          useFlexGap
-          sx={{
-            color: 'text.secondary',
-          }}
-        >
-          <IconButton
-            color="inherit"
-            href="##"
-            aria-label="GitHub"
-            sx={{ alignSelf: 'center' }}
-          >
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="##"
-            aria-label="X"
-            sx={{ alignSelf: 'center' }}
-          >
-            <TwitterIcon />
-          </IconButton>
-        </Stack>
       </Box>
     </Container>
   );

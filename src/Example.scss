@@ -1,0 +1,16 @@
+.example {
+    &__title {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 28px;
+        color: #333;
+        font-weight: bold;
+        letter-spacing: .03em;
+        background: linear-gradient(transparent 70%, #3846da63 70%);
+    }
+    &__text {
+        max-width: 500px;
+        color: #333;
+        font-size: 12px;
+    }
+}

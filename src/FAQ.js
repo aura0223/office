@@ -4,8 +4,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+
+import './FAQ.scss';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -20,64 +21,25 @@ export default function FAQ() {
     <Container
       id="faq"
       sx={{
-        pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: { xs: 3, sm: 6 },
+        pt: { xs: 8, sm: 8 },
+        pb: { xs: 8, sm: 8 },
       }}
     >
-      <Typography
-        component="h2"
-        variant="h4"
-        color="text.primary"
+      <Box
         sx={{
-          width: { sm: '100%', md: '60%' },
-          textAlign: { sm: 'left', md: 'center' },
+          width: { sm: '100%', md: '100%' },
         }}
       >
-        Frequently asked questions
-      </Typography>
-      <Box sx={{ width: '100%' }}>
-        <Accordion
-          expanded={expanded === 'panel1'}
-          onChange={handleChange('panel1')}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1d-content"
-            id="panel1d-header"
-          >
-            <Typography component="h3" variant="subtitle2">
-              How do I contact customer support if I have a question or issue?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography
-              variant="body2"
-              gutterBottom
-              sx={{ maxWidth: { sm: '100%', md: '70%' } }}
-            >
-              You can reach our customer support team by emailing
-              <Link> support@email.com </Link>
-              or calling our toll-free number. We&apos;re here to assist you
-              promptly.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          expanded={expanded === 'panel2'}
-          onChange={handleChange('panel2')}
-        >
+      <h2 className='faq__title'>よくある質問</h2>
+      <p className='faq__text'>以下は、ロナルド吸血鬼退治事務所によせられた質問です。</p>
+        <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2d-content"
             id="panel2d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              Can I return the product if it doesn&apos;t meet my expectations?
+            吸血鬼から身を守るための対策はありますか？
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -86,9 +48,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Absolutely! We offer a hassle-free return policy. If you&apos;re not
-              completely satisfied, you can return the product within [number of
-              days] days for a full refund or exchange.
+              はい、ロナルド吸血鬼退治事務所では、吸血鬼から身を守るための様々な対策を提案しています。例えば、対魔法アイテムの使用や適切なセキュリティ対策の実施などがあります。また、緊急時には迅速な対応を行い、危険から避難させることも可能です。
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -102,7 +62,7 @@ export default function FAQ() {
             id="panel3d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              What makes your product stand out from others in the market?
+            吸血鬼の退治にはどれくらいの時間がかかりますか？
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -111,9 +71,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Our product distinguishes itself through its adaptability, durability,
-              and innovative features. We prioritize user satisfaction and
-              continually strive to exceed expectations in every aspect.
+              吸血鬼の退治にかかる時間は状況によって異なります。一般的には、吸血鬼の巣窟の位置や規模、吸血鬼の強さなどによって異なります。しかし、当事務所は迅速かつ効果的な行動を取り、できる限り早く吸血鬼を排除するよう努めています。
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -127,7 +85,7 @@ export default function FAQ() {
             id="panel4d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              Is there a warranty on the product, and what does it cover?
+            吸血鬼の存在は本当ですか？
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -136,14 +94,11 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Yes, our product comes with a [length of warranty] warranty. It covers
-              defects in materials and workmanship. If you encounter any issues
-              covered by the warranty, please contact our customer support for
-              assistance.
+              当事務所では、吸血鬼の存在を真剣に受け止めており、長年の経験と専門知識を持つチームが、吸血鬼に関する事案に対処しています。
             </Typography>
           </AccordionDetails>
         </Accordion>
-      </Box>
+    </Box>
     </Container>
   );
 }

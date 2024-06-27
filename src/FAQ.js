@@ -31,7 +31,7 @@ export default function FAQ() {
         }}
       >
       <h2 className='faq__title'>よくある質問</h2>
-      <p className='faq__text'>以下は、ロナルド吸血鬼退治事務所によせられた質問です。</p>
+      <p className='faq__text'>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -39,7 +39,7 @@ export default function FAQ() {
             id="panel2d-header"
           >
             <Typography component="h3" variant="subtitle2">
-            吸血鬼から身を守るための対策はありますか？
+            質問です
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -48,7 +48,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              はい、ロナルド吸血鬼退治事務所では、吸血鬼から身を守るための様々な対策を提案しています。例えば、対魔法アイテムの使用や適切なセキュリティ対策の実施などがあります。また、緊急時には迅速な対応を行い、危険から避難させることも可能です。
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -62,7 +62,7 @@ export default function FAQ() {
             id="panel3d-header"
           >
             <Typography component="h3" variant="subtitle2">
-            吸血鬼の退治にはどれくらいの時間がかかりますか？
+            質問です
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -71,7 +71,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              吸血鬼の退治にかかる時間は状況によって異なります。一般的には、吸血鬼の巣窟の位置や規模、吸血鬼の強さなどによって異なります。しかし、当事務所は迅速かつ効果的な行動を取り、できる限り早く吸血鬼を排除するよう努めています。
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -85,7 +85,7 @@ export default function FAQ() {
             id="panel4d-header"
           >
             <Typography component="h3" variant="subtitle2">
-            吸血鬼の存在は本当ですか？
+            質問です
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -94,7 +94,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              当事務所では、吸血鬼の存在を真剣に受け止めており、長年の経験と専門知識を持つチームが、吸血鬼に関する事案に対処しています。
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             </Typography>
           </AccordionDetails>
         </Accordion>

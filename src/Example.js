@@ -15,25 +15,25 @@ const userExample = [
     avatar: <Avatar alt="" src="/static/images/avatar/1.jpg" />,
     name: 'xxxxさん',
     testimonial:
-      "街の近くに吸血鬼の巣窟があるとの報告があり、安全な方法でその巣窟を排除してほしい。",
+      "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
   },
   {
     avatar: <Avatar alt="" src="/static/images/avatar/2.jpg" />,
     name: 'xxxxさん',
     testimonial:
-      "最近、不審な吸血事件が増加しているため、吸血鬼の活動パターンや出没地を調査し、対策を提案してほしい。",
+      "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
   },
   {
     avatar: <Avatar alt="" src="/static/images/avatar/1.jpg" />,
     name: 'xxxxさん',
     testimonial:
-      "吸血鬼に襲われる危険に晒されているかもしれない場所や個人を守るためのセキュリティ対策を実施してほしい。",
+      "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
   },
   {
     avatar: <Avatar alt="" src="/static/images/avatar/2.jpg" />,
     name: 'xxxxさん',
     testimonial:
-      "特定の吸血鬼が特定の地域で人々に危害を加えているという情報があり、その吸血鬼を退治してほしい。",
+      "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Example() {
         }}
       >
       <h2 className='example__title'>参考事例</h2>
-      <p className='example__text'>以下は、ロナルド吸血鬼退治事務所に対する依頼内容の参考事例です</p>
+      <p className='example__text'>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </Box>
       <Grid container spacing={2}>
         {userExample.map((testimonial, index) => (

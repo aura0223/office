@@ -30,7 +30,7 @@ function App() {
     <div>
       <div id="top" className='main'>
         <AppAppBar />
-        <p className='title'>Night's Guardians!</p>
+        <p className='title'>Title!</p>
       </div>
       <div className='main__example'>
       <Title />
